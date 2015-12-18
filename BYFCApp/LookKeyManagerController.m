@@ -111,7 +111,7 @@ CycleScrollView*CyScrollViewInit;
     {
         UILabel*label=[[UILabel alloc]initWithFrame:CGRectMake(40, 0, 100, 30)];
                label.textColor=[UIColor redColor];
-        label.text=@"   钥匙托管协议书";
+        label.text=@"   钥匙托管协议书|胸卡";
         label.font=[UIFont fontWithName:@"HiraKakuProN-W3" size:13];
         return label;
 

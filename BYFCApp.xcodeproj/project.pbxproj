@@ -3956,7 +3956,7 @@
 				TargetAttributes = {
 					CD2AA64F1A2DB38700A41B1A = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 5QPLT7NS76;
+						DevelopmentTeam = RYDW2YM5DN;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -4839,7 +4839,7 @@
 				);
 				INFOPLIST_FILE = BYFCApp/Info.plist;
 				INFOPLIST_PREPROCESS = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4885,7 +4885,7 @@
 				);
 				INFOPLIST_FILE = BYFCApp/Info.plist;
 				INFOPLIST_PREPROCESS = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
