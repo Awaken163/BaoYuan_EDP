@@ -113,16 +113,22 @@
         [[PgyManager sharedPgyManager]setEnableFeedback:NO];
         
         [[PgyManager sharedPgyManager]startManagerWithAppId:Pg_sdk_id];
-        [[PgyManager sharedPgyManager]checkUpdate];
-//#warning 强制版本更新
-        [[MyRequest defaultsRequest] GetUpgradeLogNew:@"1" userid:[PL_USER_STORAGE objectForKey:PL_USER_USERID] token:[PL_USER_STORAGE objectForKey:PL_USER_TOKEN] backInfoMessage:^(NSString *str) {
-            appNumStr = [NSString stringWithFormat:@"%@",str];
-        }];
-        
+//        [[PgyManager sharedPgyManager]checkUpdate];
+//        [[MyRequest defaultsRequest] GetUpgradeLogNew:@"1" userid:[PL_USER_STORAGE objectForKey:PL_USER_USERID] token:[PL_USER_STORAGE objectForKey:PL_USER_TOKEN] backInfoMessage:^(NSString *str) {
+//            appNumStr = [NSString stringWithFormat:@"%@",str];
+//        }];
+//
+#warning 强制版本更新
+        appNumStr = @"1.3.7";
         NSDictionary* dict = [[NSBundle mainBundle] infoDictionary];
         NSString *app_build = [dict objectForKey:@"CFBundleShortVersionString"];
         if (![app_build isEqualToString:appNumStr]) {
             [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:@"NEW"];
+        }
+        else
+        {
+            [[NSUserDefaults standardUserDefaults] setObject:@"0" forKey:@"NEW"];
+   
         }
         NSLog(@"沙盒路径：%@",NSHomeDirectory());
       

@@ -44,6 +44,7 @@ typedef NS_ENUM(NSUInteger  , SubTypeString) {
 //    筛选出来的数据
     
     NSString *newBanBen;
+    NSString *appNumStr;
   
    }
 @property(nonatomic,strong)NSMutableArray*dataSourceArray ;
@@ -78,7 +79,9 @@ typedef NS_ENUM(NSUInteger  , SubTypeString) {
         nameLable.text = [NSString stringWithFormat:@"您好,%@",name];
     nameLable.textColor = [UIColor blackColor];
     nameLable.font = [UIFont boldSystemFontOfSize:22];
+
     newBanBen = [[NSUserDefaults standardUserDefaults]objectForKey:@"NEW"];
+    
     if ([newBanBen isEqualToString:@"1"]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"警告" message:@"请更新版本否则应用无法正常使用" delegate:self cancelButtonTitle:@"更新" otherButtonTitles:nil,nil];
         [alert show];

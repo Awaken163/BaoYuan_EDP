@@ -96,7 +96,7 @@ const char *LookKey;
 {
     _SELF=roomVC;
     QianPeiDate=@"";
-     WhereKeyStr=@"宝源";
+     WhereKeyStr=@"宝原";
     PasswordKeyStr=@"0";
     ContactMess=@"";
     CheckInUserId=@"";
@@ -476,7 +476,7 @@ const char *LookKey;
 {
      sender.selected=!sender.selected;
     if (sender.selected==YES) {
-         WhereKeyStr=@"宝源";
+         WhereKeyStr=@"宝原";
         self.Custom_Room_PopoverView4.hangjiaBtn.selected=NO;
         self.Custom_Room_PopoverView4.LinkmanView.hidden=YES;
 
@@ -1956,7 +1956,7 @@ const char *LookKey;
 #pragma mark 点击钥匙的按钮
 -(void)ConfigurationPopoverView4AllButtonMethod
 {
-    WhereKeyStr=@"宝源";
+    WhereKeyStr=@"宝原";
     CheckInUserId=@"";
     ContactMess=@"";
     UserIDstring=@"";
